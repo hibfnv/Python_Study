@@ -13,7 +13,7 @@ def t_pets(t_type, t_pet):
     print("它的名字叫" + t_pet)
 
 
-def pets(p_type, p_pets):
+def pets(p_type, p_pets="小狗"):  # 在函数定义的开始即给相应的形参赋值，该函数在后期就算用户没有输入时给予默认值，此为默认参数。
     p_type = input("请输入你的宠物类型：")
     p_pets = input("请输入你的宠物名字：")
     print("你的宠物是：" + p_pets + "，它是一只" + p_type)
@@ -26,4 +26,7 @@ print('='*30)
 # 在调用t_pets将位置中的数据顺序调换位置后得到的结果
 t_pets("七月", "大狼狗")
 print('='*30)
-pets("", "")
+# 在函数调用过程中给相应的实参传输的值，该过程为关键字参数，即key = value
+t_pets(t_type="小狗", t_pet="玛利")
+print('='*30)
+pets('')    # 因为使用了默认值参数，在此过程中，形参只使用了一个参数也不会报错。
