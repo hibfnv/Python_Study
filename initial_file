@@ -1,0 +1,5 @@
+This is a scripts folder for python learning. For this folder it is only set for python.
+The first script for python is "Hello World!!"
+This script created by python 3.
+a = "Hello World!!"
+print(a)
