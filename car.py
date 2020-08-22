@@ -4,11 +4,14 @@ class Car():
         self.manufacture = manufacture
         self.model = model
         self.produce_date = produce_date
+        self.odometer_reading = 0
 
     def get_description(self):
         car_name = 'The ' + str(self.produce_date) + 'th ' + self.manufacture.upper() + ' ' + self.model
         return car_name
 
-
+    def get_odometer(self):
+        print("This car has " + str(self.odometer_reading) + " miles on it."
 my_car = Car('BMW', '525Li', 2019)
 print(my_car.get_description())
+my_car.get_odometer()
