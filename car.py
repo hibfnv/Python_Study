@@ -21,7 +21,10 @@ class Car():
             print("\033[31mRoll back odometer is forbidden!!\033[0m")
 
     def increase_odometer(self, miles):
-        self.odometer_reading += miles
+        if int(miles) > 0:
+            self.odometer_reading += miles
+        else:
+            print("\033[31mYou can't put the minus integer here!\033[0m")
 
 
 my_car = Car('BMW', '525Li', 2019)
@@ -32,4 +35,8 @@ my_car.update_odometer(35780)
 my_car.get_odometer()
 print("When the car has increase 300 miles odometer:")
 my_car.increase_odometer(300)
+my_car.get_odometer()
+print("When user input a minus integer in: ")
+my_car.increase_odometer(-100)
+print("\033[32mThe odometer will not be changed after the last input is minus integer:\033[0m")
 my_car.get_odometer()
