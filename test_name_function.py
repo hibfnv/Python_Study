@@ -7,8 +7,8 @@ class NamesTestCase(unittest.TestCase):
     """测试name_function.py"""
 
     def test_file_last_name(self):
-        formatted_name = get_formatted_name('Thomas', 'Colin')
-        self.assertEqual(formatted_name, 'Thomas Colin')
+        formatted_name = get_formatted_name('Thomas', 'Colin', 'Scott')
+        self.assertEqual(formatted_name, 'Thomas Colin Scott')
 
 
 unittest.main()
