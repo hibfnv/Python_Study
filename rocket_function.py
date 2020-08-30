@@ -18,7 +18,7 @@ def check_events(rocket):
                 rocket.move_right = True
             elif event.key == pygame.K_LEFT:
                 rocket.move_left = True
-            elif event.key == pygame.KEYUP:
+            elif event.key == pygame.K_UP:
                 rocket.move_up = True
             elif event.key == pygame.K_DOWN:
                 rocket.move_down = True
